@@ -41,7 +41,7 @@ Before you begin, ensure you have the following ready.
     >   iam.googleapis.com
     > ```
 -   **Node.js**: [Node.js](https://nodejs.org/) (version 18 or later).
--   **Gemini API Key**: At least one Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey). The `generate-complaint` function is designed to use up to three keys for better resilience.
+-   **Gemini API Key**: At least one Gemini API key. The `generate-complaint` function is designed to use up to three keys for better resilience.
 
 ---
 
@@ -93,10 +93,10 @@ This function submits feedback to a Pub/Sub topic.
 2.  **Update the Source Code**:
     The function needs to know your project ID to find the topic.
     -   Open `cloud-functions/submit-feedback/index.js`.
-    -   Locate the line: `const topicName = 'projects/bia-demos/topics/devfest-comments-topic';`
-    -   Replace `bia-demos` with your actual Google Cloud Project ID.
+    -   Locate the line: `const topicName = 'projects/[YOUR_PROJECT_ID]/topics/customer-comments-topic'`;
+    -   Replace `YOUR_PROJECT_ID` with your actual Google Cloud Project ID.
         ```javascript
-        const topicName = 'projects/[YOUR_PROJECT_ID]/topics/devfest-comments-topic';
+        const topicName = 'projects/[YOUR_PROJECT_ID]/topics/customer-comments-topic';
         ```
     -   Save the file.
 
