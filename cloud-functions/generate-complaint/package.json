@@ -1,0 +1,12 @@
+{
+  "name": "generate-complaint-function",
+  "version": "1.0.0",
+  "description": "Google Cloud Function to generate a complaint using Gemini API with retries.",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "@google/genai": "^1.27.0"
+  }
+}

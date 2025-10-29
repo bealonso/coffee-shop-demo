@@ -1,0 +1,13 @@
+{
+  "name": "submit-feedback-function",
+  "version": "1.0.0",
+  "description": "Google Cloud Function to submit user feedback.",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^4.8.0",
+    "protobufjs": "^7.3.2"
+  }
+}

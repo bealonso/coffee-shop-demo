@@ -1,0 +1,5 @@
+{
+  "name": "Coffee Shop Feedback",
+  "description": "A simple application for users to provide feedback to a coffee shop. It includes a feature to auto-generate a negative comment using the Gemini API.",
+  "requestFramePermissions": []
+}
